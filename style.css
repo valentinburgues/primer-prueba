@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* grid area */
+
+.contenedor {
+   display: grid;
+   grid-template-columns: 200px 1fr 200px 200px;
+   grid-template-rows: 400px 30rem 500px 100px ;
+   grid-template-areas: 
+   "nav header header header"
+   "nav secciona secciona aside"
+   "nav seccionb seccionb aside"
+   "nav footer footer footer"
+   ;
+}
+
+header {
+    background-image: url(imagenes/montanas-en-patagonia-argentina-4273.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    border-style: inset;
+
+}
+header h1{
+    margin-top: 150px;
+    font-size: 70px;
+    color: green;
+    
+}
+
+
+nav {
+    
+    grid-area: nav;
+    background-color: black;
+    
+    
+
+}
+.box{
+    border-radius: 6px;
+    width: 50%;
+    height: 20px;
+    margin: 30px auto;
+
+
+}
+    
+          
+    
+
+.box-uno{
+    
+    background-color: green;
+    transition: all 0.3s;
+    
+    
+
+    
+
+}
+.box-dos{
+    background-color: brown;
+    transition: all 0.3s;
+    
+    
+}
+.box-tres{
+    background-color: blueviolet;
+    transition: all 0.3s;
+    
+}
+.box:hover{
+    transform: scale(1.5);
+
+
+
+}
+.secciona {
+    background-color: rgb(23, 58, 58);
+    grid-area: secciona;
+    display: flex;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: cover;
+    
+    
+}
+h2{
+    margin-top: 20px;
+}
+
+
+.div2{
+    display: flex;
+    
+     
+}
+.img1{
+    width: 250px;
+    height: 250px;
+    margin-top: 40px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    
+    
+}
+
+
+
+
+.seccionb {
+    background-color: rgb(143, 143, 238);
+    grid-area: seccionb; 
+    display: flex;
+    
+}
+
+.h2b{
+    margin-left: 100px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    
+}
+.video1{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 60px;
+    
+}
+
+aside {
+    background-color: red;
+    grid-area: aside; 
+}
+
+footer {
+    background-color: grey;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul  {
+    margin-bottom: 50px;
+    margin-top: 30px;
+   
+    border-color: green;
+    border-radius: 20px; 
+    font-size: 100%;
+    transform: scale(1);
+    
+    
+}
+.li1{
+    transition: all 1.5s;
+    border-radius: 6px;
+}
+
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border: 10px;
+}
+
+.contenedor2 {
+    display: grid;
+    
+    grid-template-columns: 200px 1000px 200px ;
+    grid-template-rows: 300px 600px 600px 300px ;
+    grid-template-areas: 
+   "nav2 header2 header2 header2 "
+   "nav2 seccion1 aside2  aside2"
+   "nav2 seccion2 aside2 aside2"
+   "nav2 seccion2 aside2 aside2"
+   "footer2 footer2 footer2 footer2";
+   
+
+}
+.header2{
+    grid-area: header2;
+    display: flex;
+    justify-content: center;
+    border-style: inset;
+}
+.navproductos {
+    grid-area: nav2;
+
+}
+
+.seccion-productos1{
+    grid-area: seccion1;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    display: flex;
+   flex-wrap: wrap;
+    
+    
+    
+}
+
+
+.img2{
+    width: 200px;
+    height: 200px;
+    margin-top: 200px;
+}
+.img3{
+    width: 200px;
+    height: 200px;
+}
+.img4{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+.seccion-productos2 {
+    grid-area: seccion2;
+    background-color: black;
+    border-style: groove;
+    color: white;
+}
+.galeriastanley{
+    margin-top: 20px;
+}
+.aside2{
+    grid-area: aside2;
+    
+}
+
+
+.footer2{
+ grid-area: footer2;
+ background-color: gray;
+    
+}
+
+.contenedorfooter{
+    display: flex;
+    
+}
+footer div img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
